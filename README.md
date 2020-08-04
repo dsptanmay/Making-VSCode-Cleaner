@@ -16,5 +16,5 @@ Fonts used:
 - [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 - [Cascadia Code PL](https://github.com/microsoft/cascadia-code)
 
-Additional Apps/Features:
+Apps Used:
 - [Powershell Core](https://github.com/PowerShell/PowerShell)
