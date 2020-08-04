@@ -1,4 +1,4 @@
-# Making VSCode Less Cluttered
+# Making VSCode Cleaner
 
 VSCode is one of the most popular editors out on the market right now. It was developed by Microsoft and now is being used by millions of users.
 
@@ -74,10 +74,14 @@ Go ahead and download Cascadia Code from the link mentioned above. Now, extract 
 
 Now, to set Cascadia Code PL as the default font in Windows Terminal, we have to change the settings. Use the shortcut ```Ctrl+,``` to open the settings.json file or open it from the dropdown menu.
 
-Once it has opened, insert the following line into the defaults section:
+Once it has opened, insert the following line into the ```defaults``` section:
 - ```"fontFace":"Cascadia Code PL"``` 
 
-Be sure to save the file. As soon as the file is saved, you should see the above image appear in your PowerShell Tab.
+Your defaults section should look like this:
+
+![img 3](demo/img_3.png)
+
+Be sure to save the file. As soon as the file is saved, you should see the arrow appear in your PowerShell Tab.
 
 
 ## Section 3: Removing the unnecessary stuff from VSCode
