@@ -83,5 +83,55 @@ Your defaults section should look like this:
 
 Be sure to save the file. As soon as the file is saved, you should see the arrow appear in your PowerShell Tab.
 
+Now we have a professional looking command line!
 
 ## Section 3: Removing the unnecessary stuff from VSCode
+
+Now onto the important stuff: Fixing VSCode.
+
+Here is a list of all the stuff that we will be removing:
+- The file tabs(Optional)
+- The Activity Bar
+- The Menu Bar
+- Cleaning up the Status Bar
+- Removing the Status Bar (optional)
+
+### Part 1: Removing the file tabs:
+
+We can remove file tabs in 2 ways:
+- From the **Command Palette**:
+    - Open the Command Palette and search for "Tab Visibility". 
+    - Find the option that says "View:Toggle Tab Visibility"
+    - Click on that. Now the tabs are gone! 
+    - This immmediately makes the top part of VSCode Less cluttered.
+
+- From **Settings(JSON)**:
+    - Open Settings JSON using the Command Palette and insert the following line in the file:
+        - ```"workbench.editor.showTabs":false"```
+
+
+### Part 2: Removing the Menu Bar:
+
+This one is pretty straightforward.
+
+To disable the Menus on the top left of VSCode, simply search for "Menu Bar" in the Command Palette.
+
+Find the option that says "View: Toggle Menu Bar".
+
+Click on that and you should see the menu bar disappearing.
+
+To access it any time, simply press Alt and it will be visible again 
+
+### Part 3: Removing the Activity Bar:
+
+This one requires some extra work, as we still wish to access the different panels accessible by the Activity Bar.
+
+To get started, install the extension **Activitus Bar** mentioned above. When it is installed, you should see 5 icons appear on the status bar (the bottom bar of VSCode).
+
+Now, you can either move the settings to the right side of the status bar or let it stay at the left side. If you wish to move it to the right side, follow these steps:
+- Open the Settings(UI) [Ctrl+,]
+- Search for "Activitus Bar" 
+![Img 4](demo/img_4.png)
+
+- Change the alignment option to "Right"
+- The icons will now shift to the Right.
