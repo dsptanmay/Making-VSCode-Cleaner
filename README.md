@@ -217,6 +217,13 @@ Fortunately, that is pretty easy to do. The steps to do so are as follows:
 - Now, close the current shell by clicking on the bin icon on the top part of the shell. Once you reopen it, you will see that it shows the modified shell i.e. PowerShell Core.
 ![img 5](demo/img_5.png)
 
+If you do not see some characters or you see squares, don't worry! We can fix that by changing the terminal font to Cascadia Code PL. To change the Terminal Font, open Settings(UI) and search for Terminal Font.
+
+![img 6](demo/img_6.png)
+
+Change it to Cascadia Code PL and hit save. Now, all characters should be displayed properly within the terminal window.
+
+
 ### Part 3-Choosing a Good Theme:
 
 A good theme is important not only to your worflow, but also to your eyes. If we do not choose a good theme, chances are that you may feel disinclined to code.
