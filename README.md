@@ -22,11 +22,12 @@ Apps Used:
 
 Pre-Requisites:
 
-- Git
+- Git installed
 - Powershell Core Installed
 - VSCode installed
 - Windows Terminal Installed
 
+----
 ## Section 1: Setting up Windows Terminal
 
 Windows Terminal is a brand new App by Microsoft which allows us to have multiple command lines open in a single window in a tab-like format. A good example would be to compare the individual command lines to browser tabs, and Windows Terminal being the browser which can hold all of them together.
@@ -35,6 +36,7 @@ Once you have downloaded the setup file for your device, run it to install it. A
 
 ![img 1](demo/img_1.png)
 
+----
 ## Section 2: Setting up Powershell
 
 Powershell Core is a command-line shell which has additional functionality as well.
@@ -85,18 +87,19 @@ Be sure to save the file. As soon as the file is saved, you should see the arrow
 
 Now we have a professional looking command line!
 
+----
 ## Section 3: Removing the unnecessary stuff from VSCode
 
 Now onto the important stuff: Fixing VSCode.
 
 Here is a list of all the stuff that we will be removing:
-- The file tabs(Optional)
-- The Activity Bar
-- The Menu Bar
-- Cleaning up the Status Bar
-- Removing the Status Bar (optional)
+1. The file tabs(Optional)
+2. The Activity Bar
+3. The Menu Bar
+4. Cleaning up the Status Bar
+5. Removing the Status Bar (optional)
 
-### Part 1: Removing the file tabs:
+### **Part 1:** Removing the file tabs:
 
 We can remove file tabs in 2 ways:
 - From the **Command Palette**:
@@ -110,7 +113,7 @@ We can remove file tabs in 2 ways:
         - ```"workbench.editor.showTabs":false"```
 
 
-### Part 2: Removing the Menu Bar:
+### **Part 2:** Removing the Menu Bar:
 
 This one is pretty straightforward.
 
@@ -135,3 +138,96 @@ Now, you can either move the settings to the right side of the status bar or let
 
 - Change the alignment option to "Right"
 - The icons will now shift to the Right.
+- To open/close any panel, simply click on the icon corresponding to the panel.
+- For example, to open the Explorer, click on the first icon (Files)
+
+Now to remove the activity bar, we once again have to open the Command Palette.
+
+Search for "Activity Bar" and then click on the option which says "View: Toggle Activity Bar Visibility"
+
+Now our setup looks much cleaner!
+
+### **Part 4**: Cleaning up the Status Bar:
+
+The Status Bar in its raw form contains a lot of non-useful items which make it seem very cluttered.
+
+In order to fix that, we are simply going to disable some of those items!
+
+To disable items from the status bar, simply right click on the status bar and choose the items that you don't want to have in there.
+
+These are the items that I have disabled. You are free to disable whichever items you want.
+
+- Editor Selection
+- Editor Indentation
+- Editor End of Line
+- Tweet Feedback
+
+
+### Part 5: Removing the Status Bar
+
+**NOTE** : I DO NOT RECOMMEND doing this unless you feel that there is nothing in the Status Bar which is of use to you.
+
+If you feel that you know keyboard shortcuts well enough to navigate using them daily, then the step to disable the status bar is as follows:
+- In the Command Palette , search for "Status Bar".
+- Click on the option that says "View: Toggle Status Bar Visibility"
+
+There you go! You have successfully made your VSCode setup much more minimal and cleaner.
+
+---- 
+## Section 4: Spicing up things
+
+So far, we have modified the actual VSCode Window. But, we have done nothing to modify the editor or the terminal.
+
+### Part 1-Modifying the Editor:
+
+In accordance with our aim of getting a minimal editor, these are the steps to make the actual editing area much more easy to look at:
+
+- Open Settings(JSON)
+- Add the following lines to the end:
+    - ```"editor.fontFamily": "JetBrains Mono",```
+    - ```"editor.fontSize": 16,```
+    - ```"editor.lineHeight": 40,```
+    - ```"editor.suggestLineHeight": 40,```
+
+- Save the Settings.json file and close it. 
+- You will see that the editor immediately looks much better and much more readable.
+
+----
+*What are Font Ligatures?*
+
+Font Ligatures are a specific way of showing fonts wherein two specific characters are show as one character. To learn more about font Ligatures, visit this [Link](https://www.hanselman.com/blog/MonospacedProgrammingFontsWithLigatures.aspx)
+
+----
+
+Steps to enable font Ligatures in VSCode:
+- Open Settings(JSON) once again and add the following line to it:
+    - ```"editor.fontLigatures":true,```
+
+### Part 2-Modifying the Terminal:
+
+We have already setup Powershell to be a developer's terminal.
+
+To ensure that VSCode uses PowerShell Core , we need to specify the default shell.
+
+Fortunately, that is pretty easy to do. The steps to do so are as follows:
+- Open Terminal using ```"Ctrl+`"``` or drag it out from the bottom of VSCode.
+
+- Once it has opened, change the default shell by opening the dropdown menu on the top right side and selecting "Select Default Shell". Now, select "Powershell". The location should be something like ```C:\Program Files\PowerShell\7\pwsh.exe```
+
+- Now, close the current shell by clicking on the bin icon on the top part of the shell. Once you reopen it, you will see that it shows the modified shell i.e. PowerShell Core.
+![img 5](demo/img_5.png)
+
+### Part 3-Choosing a Good Theme:
+
+A good theme is important not only to your worflow, but also to your eyes. If we do not choose a good theme, chances are that you may feel disinclined to code.
+
+That being said, every person has his/her own choice of themes. So, go ahead and search for "themes" the VSCode MarketPlace and choose the one that you like the most.
+
+A few good themes I have used are:
+- Monokai (In-Built)
+- [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) (Extension)
+- [One Dark Darker](https://marketplace.visualstudio.com/items?itemName=JoelCrosby.one-dark-darker) (Port of One Dark Pro; slightly darker background)
+- [Github Theme](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme) (Extension)
+
+
+And that is it! Now we have successfully made your Powershell professional and VSCode more minimal.
