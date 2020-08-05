@@ -1,4 +1,4 @@
-# Making VSCode Cleaner
+# Making VSCode Cleaner (Windows Only)
 
 VSCode is one of the most popular editors out on the market right now. It was developed by Microsoft and now is being used by millions of users.
 
