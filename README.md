@@ -92,7 +92,7 @@ Now we have a professional looking command line!
 
 Now onto the important stuff: Fixing VSCode.
 
-Here is a list of all the stuff that we will be removing:
+Here is a list of all the stuff that we will be modifying:
 1. The file tabs(Optional)
 2. The Activity Bar
 3. The Menu Bar
@@ -125,13 +125,17 @@ Click on that and you should see the menu bar disappearing.
 
 To access it any time, simply press Alt and it will be visible again 
 
-### Part 3: Removing the Activity Bar:
+### Part 3: Removing the Activity Bar and moving the SideBar:
 
 This one requires some extra work, as we still wish to access the different panels accessible by the Activity Bar.
 
 To get started, install the extension **Activitus Bar** mentioned above. When it is installed, you should see 5 icons appear on the status bar (the bottom bar of VSCode).
 
-Now, you can either move the settings to the right side of the status bar or let it stay at the left side. If you wish to move it to the right side, follow these steps:
+----
+Now, you can move the icons and the sidebar to the right side or let them stay at the left side. If you wish to move them to the right side, follow these steps:
+
+----
+
 - Open the Settings(UI) [Ctrl+,]
 - Search for "Activitus Bar" 
 ![Img 4](demo/img_4.png)
@@ -141,11 +145,19 @@ Now, you can either move the settings to the right side of the status bar or let
 - To open/close any panel, simply click on the icon corresponding to the panel.
 - For example, to open the Explorer, click on the first icon (Files)
 
+----
+- To move the Side Bar to the Right Side, open the Command Palette and search for "Side Bar"
+- Find the option that says "View: Toggle Side Bar Position"
+- Click on that and you will see that the side bar has now moved to the right side!
+
+----
+
 Now to remove the activity bar, we once again have to open the Command Palette.
 
 Search for "Activity Bar" and then click on the option which says "View: Toggle Activity Bar Visibility"
 
-Now our setup looks much cleaner!
+
+Now that the Activity Bar is gone, our setup looks much cleaner!
 
 ### **Part 4**: Cleaning up the Status Bar:
 
