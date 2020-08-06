@@ -262,7 +262,7 @@ A few good themes I have used are:
 
 And that is it! Now we have successfully made your Powershell professional and VSCode more minimal.
 
-This is how final setup looks :
+This is how our final setup looks :
 
 ![Final Setup](demo/img_7.png)
 
