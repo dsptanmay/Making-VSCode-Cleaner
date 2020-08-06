@@ -98,6 +98,7 @@ Here is a list of all the stuff that we will be modifying:
 3. The Menu Bar
 4. Cleaning up the Status Bar
 5. Removing the Status Bar (optional)
+6. Removing the Mini-Map
 
 ### **Part 1:** Removing the file tabs:
 
@@ -184,6 +185,16 @@ If you feel that you know keyboard shortcuts well enough to navigate using them 
 - Click on the option that says "View: Toggle Status Bar Visibility"
 
 There you go! You have successfully made your VSCode setup much more minimal and cleaner.
+
+### Part 6: Removing the Mini-Map
+
+The Mini Map is a small Map that appears on the right side of the editor. Although useful, it takes up too much space - space that can be useful for us.
+
+To remove the Mini-Map, open the Command Palette and Search for "Minimap"
+
+Find the option that says "View: Toggle MiniMap"
+
+Now, the MinMap should be disabled.
 
 ---- 
 ## Section 4: Spicing up things
