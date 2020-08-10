@@ -37,6 +37,7 @@ Once you have downloaded the setup file for your device, run it to install it. A
 ![img 1](demo/img_1.png)
 
 ----
+
 ## Section 2: Setting up Powershell
 
 Powershell Core is a command-line shell which has additional functionality as well.
@@ -88,6 +89,7 @@ Be sure to save the file. As soon as the file is saved, you should see the arrow
 Now we have a professional looking command line!
 
 ----
+
 ## Section 3: Removing the unnecessary stuff from VSCode
 
 Now onto the important stuff: Fixing VSCode.
